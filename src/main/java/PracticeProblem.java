@@ -10,12 +10,12 @@ public class PracticeProblem {
 		while (index < word.length()) {
 			if (word.charAt(index) == letter) {
 				count++;
-				if (count == 5){
-					return index++;
-				}
 				
 			}
 			index++;
+			if (count == 5){
+				return index;
+			}
 		}
 		return -1;
 	}
